@@ -1,4 +1,3 @@
-/* Basic styles for the body */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +6,7 @@ body {
 
 header {
   background-color: #f4f4f4;
-  padding: 10px 0;
+  padding: 5px 0; /* bar size*/
   text-align: center;
   font-family: cursive;
 }
@@ -19,7 +18,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 nav ul li a {
@@ -34,7 +33,7 @@ nav ul li a {
   margin-top: 20px;
 }
 
-/* Overlay text (the 'Welcome to My Portfolio!' text) */
+/* Welcome to My Portfolio! message */
 .overlay-text {
   position: absolute;
   bottom: 0;
@@ -45,14 +44,13 @@ nav ul li a {
   padding: 10px;
   border-radius: 5px;
   font-size: 20px;
-  width: auto;  /* Make the box size auto based on text */
-  max-width: 80%;  /* Prevent it from being too wide */
-  margin-bottom: 20px; /* Add space between the text and the image */
+  width: auto;  /* Makes the box size auto based on text */
+  max-width: 80%;  /* Prevents it from being too wide */
+  margin-bottom: 20px; /* Adds space between the text and the image */
   text-align: center;
   font-family: cursive;
 }
 
-/* Hero Section */
 .hero-images {
   display: flex;
   justify-content: center;
@@ -61,19 +59,15 @@ nav ul li a {
 }
 
 .hero-images img {
-  width: 500px;  /* Adjust the size for all images */
-  height: 600px;  /* Force all images to have the same height */
-  object-fit: cover;  /* This ensures that the images maintain aspect ratio but are cropped to fit */
+  width: 30%;
+  height: 375px;
+  border-radius: 10px; /* Rounded Borders*/
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
 .hero-images img:hover {
-  transform: scale(1.1);  /* Enlarge the image slightly on hover */
-}
-
-/* Crop the landscape image */
-.hero-images img[alt="Image 3"] {
-  object-position: center;  /* Crop the landscape image to center it */
+  transform: scale(1.1);
 }
 
 .content {
@@ -81,11 +75,56 @@ nav ul li a {
   margin-top: 40px;
 }
 
+/*
 .content-item h2 {
   font-size: 24px;
   margin-top: 10px;
-}
+} */
 
 .content-item p {
   font-size: 16px;
+}
+
+.content-item a {
+  text-decoration: none;
+  margin-right: 10px; /* Adds spacing */
+}
+
+.content-item i {
+  font-size: 2rem; /* Icon size */
+  color: #FF0000; /* YouTube red color */
+  transition: color 0.3s ease; /* Transition for hover effect */
+  border-radius: 10px;
+}
+
+.content-item a:nth-child(2) i {
+  color: #0077b5; /* LinkedIn blue color */
+  border-radius: 10px;
+}
+
+.content-item i:hover {
+  color: #000000; /* Changes color to black on hover */
+}
+
+.content-item a:nth-child(2) i:hover {
+  color: #000000;
+}
+
+/* Media Queries */
+/* For Tablets */
+@media screen and (max-width: 768px) {
+  .hero-images img {
+    width: 45%;
+  }
+}
+
+/* For Mobile Phones */
+@media screen and (max-width: 480px) {
+  .hero-images img {
+    width: 90%;
+  }
+
+  .overlay-text {
+    font-size: 18px;
+  }
 }
