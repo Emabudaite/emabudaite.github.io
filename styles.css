@@ -46,7 +46,7 @@ nav ul li a {
     top: 80%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: rgba(255, 133, 200, 0.8);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
