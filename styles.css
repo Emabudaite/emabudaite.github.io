@@ -5,12 +5,17 @@ body {
     padding: 0;
 }
 
-/* Header */
+/* nav bar */
 header {
     background-color: #f4f4f4;
     padding: 5px 0; /* Bar size */
     text-align: center;
     font-family: cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -73,6 +78,169 @@ nav ul li a {
     transform: scale(1.1);
 }
 
+/* Tennis Section Layout */
+.tennis-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Space between image and text */
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.tennis-content {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    gap: 50px;
+}
+
+.tennis-image {
+    width: 250px; /* Adjust image size */
+    height: 300px;
+    border-radius: 10px;
+}
+
+.tennis-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .tennis-content {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        text-align: center;
+    }
+
+    .tennis-image {
+        width: 80%;
+    }
+}
+
+/* academics Section Layout */
+.academics-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Space between image and text */
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.academics-content {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    gap: 50px;
+}
+
+.academics-image {
+    width: 250px; /* Adjust image size */
+    height: 300px;
+    border-radius: 10px;
+}
+
+.academics-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .academics-content {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        text-align: center;
+    }
+
+    .academics-image {
+        width: 80%;
+    }
+}
+
+
+
+/* volunteering Section Layout */
+.horse-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Space between image and text */
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.horse-content {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    gap: 50px;
+}
+
+.horse-image {
+    width: 250px; /* Adjust image size */
+    height: 300px;
+    border-radius: 10px;
+}
+
+.horse-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .horse-content {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        text-align: center;
+    }
+
+    .horse-image {
+        width: 80%;
+    }
+}
+
+
+/* volunteering Section Layout */
+.volunteering-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Space between image and text */
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.volunteering-content {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    gap: 50px;
+}
+
+.volunteering-image {
+    width: 250px; /* Adjust image size */
+    height: 300px;
+    border-radius: 10px;
+}
+
+.volunteering-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .volunteering-content {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        text-align: center;
+    }
+
+    .volunteering-image {
+        width: 80%;
+    }
+}
+
 /* Social Media Section */
 #social-media {
     text-align: center;
@@ -91,6 +259,7 @@ nav ul li a {
 /* Styling for Social Media Icons */
 .social-icons a {
     text-decoration: none;
+    font-size: 24px;
 }
 
 
@@ -138,12 +307,12 @@ nav ul li a {
     }
 }
 
-#tennis h2, #academics h2, #horse-riding h2 {
+#tennis h2, #academics h2, #horse-riding, #volunteering h2 {
     font-family: cursive;
 }
 
 
-#tennis p, #academics p, #horse-riding p {
+#tennis p, #academics p, #horse-riding p, #volunteering p {
     font-family: cursive;
 }
 
